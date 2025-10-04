@@ -20,10 +20,10 @@ This project aims to provide multilingual translation of generic and branded nut
 - *ID_source*: unique identifier provided at the source URL for product differentiation.
 - *date_updated_source*: date of product data being updated on the source URL (if available), in yyyy-MM-dd format.
   - Defaults to *date_updated* value if not available.
-- *name_primary\[lang\]*: standardized, colloquially accepted name of the product.
+- *name_primary_\[lang\]*: standardized, colloquially accepted name of the product.
   - *lang* is 2-letter language code according to ISO-639-1 standard.
   - TODO: standardize primary naming convention for available products.
-- *primary_name_\[lang\]*: synonym names of the product.
+- *name_secondary_\[lang\]*: synonym names of the product.
   - *lang* is 2-letter language code according to ISO-639-1 standard.
 - *categories_\[lang\]*: category taxonomy of the product.
   - *lang* is 2-letter language code according to ISO-639-1 standard.
