@@ -2,35 +2,24 @@ This project aims to provide multilingual translation of generic and branded nut
 
 # Sources
 
-## Generic Sources
-  - [Swiss Food Composition Database](https://naehrwertdaten.ch/en/)
+|Type|Source|Product or recipe|Available languages|Notes|
+|---|---|---|---|---|
+|Generic|[Swiss Food Composition Database](https://naehrwertdaten.ch/en/)|Product|en,de,fr,it,uk|Focuses on generic food ingredients, dishes available in the EU. Sometimes uses unconventional English translations due to Swiss origin.|
+|Branded|[MenuStat](https://www.menustat.org)|Product|en|Focuses on dishes available in American fast food chains. While data has not been updated since 2022, it remains reasonably accurate for purposes of nutrition estimates.|
+|Generic|[Nederlands Voedingsstoffenbestand (NEVO)](https://www.rivm.nl)|Product|en,nl|Focuses on generic food ingredients, dishes available in the EU.|
 
-## Branded Sources
-
-# Naming conventions
-## Files
-- Generic: generic_\[source_name\]_\[product_or_recipe\],
-- Branded: branded_\[brand_name\]_product
-
-## Fields
-- *ID*: unique ID number within the repository, assigned in ascending order of addition to the repository.
-- *date_updated*: date of product data being retrieved from the source URL, in yyyy-MM-dd format.
-- *source*: URL of the publicly available source from where the data was retrieved from. 
-  - Archived on Wayback Machine at the time of retrieval.
-- *ID_source*: unique identifier provided at the source URL for product differentiation.
-- *date_updated_source*: date of product data being updated on the source URL (if available), in yyyy-MM-dd format.
-  - Defaults to *date_updated* value if not available.
-- *name_primary_\[lang\]*: standardized, colloquially accepted name of the product.
-  - *lang* is 2-letter language code according to ISO-639-1 standard.
-  - TODO: standardize primary naming convention for available products.
-- *name_secondary_\[lang\]*: synonym names of the product.
-  - *lang* is 2-letter language code according to ISO-639-1 standard.
-- *categories_\[lang\]*: category taxonomy of the product.
-  - *lang* is 2-letter language code according to ISO-639-1 standard.
-  - TODO: standardize available category taxonomy to English, separate localization in other languages for category mapping in a separate file.
-- *weight_package_g*: Package weight in grams. 
-  - Provided only for branded products, and only if package size is different from serving size.
-- *weight_serving_g*: Serving weight in grams (if available).
-  - Provided only if available in the original source.
+# Fields
+|Name|Description|Notes|TODO|
+|---|---|---|---|
+|*ID*|Unique identifier of the food product/recipe data within the repository.|Assigned in ascending order at the time of addition to the repository.||
+|*date_updated*|Date of product data being retrieved from the source URL.|Provided in yyyy-MM-dd format.||
+|*source*|URL of the publicly available source from where the data was retrieved from.|Archived on Wayback Machine at the time of retrieval.||
+|*ID_source*|Unique identifier of the food product/recipe data provided at the source URL for product differentiation.|||
+|*date_updated_source*|Date of product data being updated on the source URL (if available).|Provided in yyyy-MM-dd format, defaults to *date_updated* value if not available.||
+|*name_primary_\[lang\]*|Standardized, colloquially accepted name of the product.|*lang* is 2-letter language code according to ISO-639-1 standard.|TODO: Standardize primary naming convention for available products.|
+|*name_secondary_\[lang\]*|Synonym names of the product.|*lang* is 2-letter language code according to ISO-639-1 standard.||
+|*categories_\[lang\]*|Category taxonomy of the product.|*lang* is 2-letter language code according to ISO-639-1 standard.|TODO: standardize available category taxonomy to English, separate localization in other languages for category mapping in a separate file.|
+|*weight_package_g*|Package weight in grams.|Provided only for branded products, and only if package size is different from serving size.||
+|*weight_serving_g*|Serving weight in grams (if available)|Provided only if available in the original source.||
 
 The rest of the fields contain actual nutrition data as provided in the data source, naming standardized and values normalized to "grams per 100 grams of product" measurements.
