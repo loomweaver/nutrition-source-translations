@@ -6,7 +6,7 @@ This project aims to provide multilingual translation of generic and branded nut
 |---|---|---|---|---|
 |Generic|[Swiss Food Composition Database](https://naehrwertdaten.ch/en/)|Product|en,de,fr,it,uk|Focuses on generic food ingredients, dishes available in the EU. Sometimes uses unconventional English translations due to Swiss origin.|
 |Branded|[MenuStat](https://www.menustat.org)|Product|en|Focuses on dishes available in American fast food chains. While data has not been updated since 2022, it remains reasonably accurate for purposes of nutrition estimates.|
-|Generic|[Nederlands Voedingsstoffenbestand (NEVO)](https://www.rivm.nl)|Product|en,nl|Focuses on generic food ingredients, dishes available in the EU.|
+|Generic|[NEVO online, version 2023/8.0. RIVM, Bilthoven](https://www.rivm.nl)|Product|en,nl|Focuses on generic food ingredients, dishes available in the EU. Terms of Use do not allow amending the original data for any purposes, so some of the relevant fields had to be duplicated to adhere to the naming convention.|
 
 # Fields
 |Name|Description|Notes|TODO|
