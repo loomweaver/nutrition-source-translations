@@ -10,7 +10,7 @@ This project aims to provide multilingual translation of generic and branded nut
 
 # Fields
 |Name|Description|Notes|TODO|
-|---|---|---|
+|---|---|---|---|
 |*ID*|Unique identifier of the food product/recipe data within the repository.|Assigned in ascending order at the time of addition to the repository.||
 |*date_updated*|Date of product data being retrieved from the source URL.|Provided in yyyy-MM-dd format.||
 |*source*|URL of the publicly available source from where the data was retrieved from.|Archived on Wayback Machine at the time of retrieval.||
