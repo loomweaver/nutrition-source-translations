@@ -17,6 +17,7 @@ This project aims to provide multilingual translation of generic and branded nut
 |*ID_source*|Unique identifier of the food product/recipe data provided at the source URL for product differentiation.|||
 |*date_updated_source*|Date of product data being updated on the source URL (if available).|Provided in yyyy-MM-dd format, defaults to *date_updated* value if not available.||
 |*name_primary_\[lang\]*|Standardized, colloquially accepted name of the product.|*lang* is 2-letter language code according to ISO-639-1 standard.|TODO: Standardize primary naming convention for available products.|
+|*brand*|Standardized, colloquially accepted name of the brand ("generic" if unavailable).|||
 |*name_secondary_\[lang\]*|Synonym names of the product.|*lang* is 2-letter language code according to ISO-639-1 standard.||
 |*categories_\[lang\]*|Category taxonomy of the product.|*lang* is 2-letter language code according to ISO-639-1 standard.|TODO: standardize available category taxonomy to English, separate localization in other languages for category mapping in a separate file.|
 |*weight_package_g*|Package weight in grams.|Provided only for branded products, and only if package size is different from serving size.||
